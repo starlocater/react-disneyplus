@@ -3,6 +3,8 @@ import Banner from './components/Banner';
 import styled from 'styled-components';
 import './App.css';
 import Category from './components/Category';
+import Row from './components/Row';
+import requests from './api/request';
 
 function App() {
   return (
@@ -11,6 +13,13 @@ function App() {
         <Nav/>
         <Banner/>
         <Category/>
+        <Row title="Trending Now" id="TN" fetchURL={requests.fetchTrending}/>
+        <Row title="Top Rated" id="TR" fetchURL={requests.fetchTopRated}/>
+        <Row title="Action" id="AC" fetchURL={requests.fetchActionMovies}/>
+        <Row title="Comedy" id="CM" fetchURL={requests.fetchComedyMovies}/>
+        <Row title="Horror" id="HR" fetchURL={requests.fetchHorrorMovies}/>
+        <Row title="Romance" id="RM" fetchURL={requests.fetchRomanceMovies}/>
+        <Row title="Documentary" id="DM" fetchURL={requests.fetchDocumentaries}/>
       </MainContainer>
     </div>
   );

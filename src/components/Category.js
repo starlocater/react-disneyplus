@@ -1,36 +1,67 @@
-import React from 'react'
-import styled from 'styled-components'
+import React, { useRef } from 'react';
+import styled from 'styled-components';
 
 const Category = () => {
+
+  // Create a ref for each video
+  const disneyRef = useRef(null);
+  const marvelRef = useRef(null);
+  const pixarRef = useRef(null);
+  const starwarsRef = useRef(null);
+  const nationalRef = useRef(null);
+
+  // Play video function
+  const playVideo = (videoRef) => {
+    if (videoRef && videoRef.current) {
+      const playPromise = videoRef.current.play();
+      if (playPromise !== undefined) {
+        playPromise.then(_ => {
+          // Automatic playback started!
+        }).catch(error => {
+          // Auto-play was prevented
+          // Show a UI element to let the user manually start playback
+        });
+      }
+    }
+  };
+
+  // Pause video function
+  const rewindVideo = (videoRef) => {
+    if (videoRef && videoRef.current && !videoRef.current.paused) {
+      videoRef.current.currentTime = 0;
+      videoRef.current.pause();
+    }
+  };
+
   return (
     <Container>
-      <Wrap>
+      <Wrap onMouseEnter={() => playVideo(disneyRef)} onMouseLeave={() => rewindVideo(disneyRef)}>
         <img src="/images/viewers-disney.png" alt="disney"/>
-        <video autoPlay loop muted>
+        <video ref={disneyRef} loop muted>
           <source src="/videos/disney.mp4" type="video/mp4"/>
         </video>
       </Wrap>
-      <Wrap>
+      <Wrap onMouseEnter={() => playVideo(marvelRef)} onMouseLeave={() => rewindVideo(marvelRef)}>
         <img src="/images/viewers-marvel.png" alt="marvel"/>
-        <video autoPlay loop muted>
+        <video ref={marvelRef} loop muted>
           <source src="/videos/marvel.mp4" type="video/mp4"/>
         </video>
       </Wrap>
-      <Wrap>
+      <Wrap onMouseEnter={() => playVideo(pixarRef)} onMouseLeave={() => rewindVideo(pixarRef)}>
         <img src="/images/viewers-pixar.png" alt="pixar"/>
-        <video autoPlay loop muted>
+        <video ref={pixarRef} loop muted>
           <source src="/videos/pixar.mp4" type="video/mp4"/>
         </video>
       </Wrap>
-      <Wrap>
+      <Wrap onMouseEnter={() => playVideo(starwarsRef)} onMouseLeave={() => rewindVideo(starwarsRef)}>
         <img src="/images/viewers-starwars.png" alt="starwars"/>
-        <video autoPlay loop muted>
+        <video ref={starwarsRef} loop muted>
           <source src="/videos/star-wars.mp4" type="video/mp4"/>
         </video>
       </Wrap>
-      <Wrap>
+      <Wrap onMouseEnter={() => playVideo(nationalRef)} onMouseLeave={() => rewindVideo(nationalRef)}>
         <img src="/images/viewers-national.png" alt="national-geographic"/>
-        <video autoPlay loop muted>
+        <video ref={nationalRef} loop muted>
           <source src="/videos/national-geographic.mp4" type="video/mp4"/>
         </video>
       </Wrap>
@@ -91,6 +122,5 @@ const Wrap = styled.div`
     video {
       opacity: 1;
     }
-  }
 `;
 

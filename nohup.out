@@ -1,0 +1,992 @@
+git: 'run'은(는) 깃 명령이 아닙니다. 'git --help'를 참고하십시오.
+
+가장 비슷한 명령은
+	prune
+
+> react-disneyplus@0.1.0 start
+> react-scripts start
+
+(node:403393) [DEP_WEBPACK_DEV_SERVER_ON_AFTER_SETUP_MIDDLEWARE] DeprecationWarning: 'onAfterSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+(node:403393) [DEP_WEBPACK_DEV_SERVER_ON_BEFORE_SETUP_MIDDLEWARE] DeprecationWarning: 'onBeforeSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+Starting the development server...
+
+Compiled successfully!
+
+You can now view react-disneyplus in the browser.
+
+  Local:            http://localhost:3000
+  On Your Network:  http://192.168.15.80:3000
+
+Note that the development build is not optimized.
+To create a production build, use npm run build.
+
+webpack compiled successfully
+Compiling...
+[0;33mOne of your dependencies, babel-preset-react-app, is importing the
+"@babel/plugin-proposal-private-property-in-object" package without
+declaring it in its dependencies. This is currently working because
+"@babel/plugin-proposal-private-property-in-object" is already in your
+node_modules folder for unrelated reasons, but it [1mmay break at any time[0;33m.
+
+babel-preset-react-app is part of the create-react-app project, [1mwhich
+is not maintianed anymore[0;33m. It is thus unlikely that this bug will
+ever be fixed. Add "@babel/plugin-proposal-private-property-in-object" to
+your devDependencies to work around this error. This will make this message
+go away.[0m
+  
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/Category.js
+  Line 1:16:  'useRef' is defined but never used  no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/Category.js
+  Line 1:16:  'useRef' is defined but never used  no-unused-vars
+
+webpack compiled with 1 warning
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/Category.js
+  Line 1:16:  'useRef' is defined but never used  no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/Category.js
+  Line 1:16:  'useRef' is defined but never used  no-unused-vars
+
+webpack compiled with 1 warning
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/Category.js
+  Line 1:16:  'useRef' is defined but never used  no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/Category.js
+  Line 1:16:  'useRef' is defined but never used  no-unused-vars
+
+webpack compiled with 1 warning
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/Category.js
+  Line 1:16:  'useRef' is defined but never used  no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/Category.js
+  Line 1:16:  'useRef' is defined but never used  no-unused-vars
+
+webpack compiled with 1 warning
+Compiling...
+Failed to compile.
+
+[eslint] 
+src/components/Category.js
+  Line 9:41:   'play' is not defined   no-undef
+  Line 9:69:   'pause' is not defined  no-undef
+  Line 15:41:  'play' is not defined   no-undef
+  Line 15:69:  'pause' is not defined  no-undef
+  Line 21:41:  'play' is not defined   no-undef
+  Line 21:69:  'pause' is not defined  no-undef
+  Line 27:41:  'play' is not defined   no-undef
+  Line 27:69:  'pause' is not defined  no-undef
+  Line 33:41:  'play' is not defined   no-undef
+  Line 33:69:  'pause' is not defined  no-undef
+
+Search for the keywords to learn more about each error.
+WARNING in [eslint] 
+src/components/Category.js
+  Line 1:16:  'useRef' is defined but never used  no-unused-vars
+
+ERROR in [eslint] 
+src/components/Category.js
+  Line 9:41:   'play' is not defined   no-undef
+  Line 9:69:   'pause' is not defined  no-undef
+  Line 15:41:  'play' is not defined   no-undef
+  Line 15:69:  'pause' is not defined  no-undef
+  Line 21:41:  'play' is not defined   no-undef
+  Line 21:69:  'pause' is not defined  no-undef
+  Line 27:41:  'play' is not defined   no-undef
+  Line 27:69:  'pause' is not defined  no-undef
+  Line 33:41:  'play' is not defined   no-undef
+  Line 33:69:  'pause' is not defined  no-undef
+
+Search for the keywords to learn more about each error.
+
+webpack compiled with 1 error and 1 warning
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/Category.js
+  Line 1:16:  'useRef' is defined but never used  no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/Category.js
+  Line 1:16:  'useRef' is defined but never used  no-unused-vars
+
+webpack compiled with 1 warning
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Failed to compile.
+
+[eslint] 
+src/components/Category.js
+  Line 37:75:  'pauseVideo' is not defined  no-undef
+  Line 43:75:  'pauseVideo' is not defined  no-undef
+  Line 49:74:  'pauseVideo' is not defined  no-undef
+  Line 55:77:  'pauseVideo' is not defined  no-undef
+  Line 61:77:  'pauseVideo' is not defined  no-undef
+
+Search for the keywords to learn more about each error.
+WARNING in [eslint] 
+src/components/Category.js
+  Line 29:9:  'rewindVideo' is assigned a value but never used  no-unused-vars
+
+ERROR in [eslint] 
+src/components/Category.js
+  Line 37:75:  'pauseVideo' is not defined  no-undef
+  Line 43:75:  'pauseVideo' is not defined  no-undef
+  Line 49:74:  'pauseVideo' is not defined  no-undef
+  Line 55:77:  'pauseVideo' is not defined  no-undef
+  Line 61:77:  'pauseVideo' is not defined  no-undef
+
+Search for the keywords to learn more about each error.
+
+webpack compiled with 1 error and 1 warning
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Failed to compile.
+
+[eslint] 
+src/App.js
+  Line 14:10:  'Row' is not defined  react/jsx-no-undef
+
+Search for the keywords to learn more about each error.
+ERROR in [eslint] 
+src/App.js
+  Line 14:10:  'Row' is not defined  react/jsx-no-undef
+
+Search for the keywords to learn more about each error.
+
+webpack compiled with 1 error
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/Row.js
+  Line 5:10:  'movies' is assigned a value but never used                                                                        no-unused-vars
+  Line 9:6:   React Hook useEffect has a missing dependency: 'fetchMovieData'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/Row.js
+  Line 5:10:  'movies' is assigned a value but never used                                                                        no-unused-vars
+  Line 9:6:   React Hook useEffect has a missing dependency: 'fetchMovieData'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+webpack compiled with 1 warning
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/Row.js
+  Line 5:10:  'movies' is assigned a value but never used                                                                        no-unused-vars
+  Line 9:6:   React Hook useEffect has a missing dependency: 'fetchMovieData'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/Row.js
+  Line 5:10:  'movies' is assigned a value but never used                                                                        no-unused-vars
+  Line 9:6:   React Hook useEffect has a missing dependency: 'fetchMovieData'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+webpack compiled with 1 warning
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/Row.js
+  Line 5:10:  'movies' is assigned a value but never used                                                                        no-unused-vars
+  Line 5:18:  'setMovies' is assigned a value but never used                                                                     no-unused-vars
+  Line 9:6:   React Hook useEffect has a missing dependency: 'fetchMovieData'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/Row.js
+  Line 5:10:  'movies' is assigned a value but never used                                                                        no-unused-vars
+  Line 5:18:  'setMovies' is assigned a value but never used                                                                     no-unused-vars
+  Line 9:6:   React Hook useEffect has a missing dependency: 'fetchMovieData'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+webpack compiled with 1 warning
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/Row.js
+  Line 5:10:  'movies' is assigned a value but never used                                                                        no-unused-vars
+  Line 5:18:  'setMovies' is assigned a value but never used                                                                     no-unused-vars
+  Line 9:6:   React Hook useEffect has a missing dependency: 'fetchMovieData'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/Row.js
+  Line 5:10:  'movies' is assigned a value but never used                                                                        no-unused-vars
+  Line 5:18:  'setMovies' is assigned a value but never used                                                                     no-unused-vars
+  Line 9:6:   React Hook useEffect has a missing dependency: 'fetchMovieData'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+webpack compiled with 1 warning
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/Row.js
+  Line 5:10:  'movies' is assigned a value but never used                                                                        no-unused-vars
+  Line 5:18:  'setMovies' is assigned a value but never used                                                                     no-unused-vars
+  Line 9:6:   React Hook useEffect has a missing dependency: 'fetchMovieData'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/Row.js
+  Line 5:10:  'movies' is assigned a value but never used                                                                        no-unused-vars
+  Line 5:18:  'setMovies' is assigned a value but never used                                                                     no-unused-vars
+  Line 9:6:   React Hook useEffect has a missing dependency: 'fetchMovieData'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+webpack compiled with 1 warning
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/Row.js
+  Line 5:10:   'movies' is assigned a value but never used                                                                        no-unused-vars
+  Line 5:18:   'setMovies' is assigned a value but never used                                                                     no-unused-vars
+  Line 9:6:    React Hook useEffect has a missing dependency: 'fetchMovieData'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+  Line 12:11:  'response' is assigned a value but never used                                                                      no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/Row.js
+  Line 5:10:   'movies' is assigned a value but never used                                                                        no-unused-vars
+  Line 5:18:   'setMovies' is assigned a value but never used                                                                     no-unused-vars
+  Line 9:6:    React Hook useEffect has a missing dependency: 'fetchMovieData'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+  Line 12:11:  'response' is assigned a value but never used                                                                      no-unused-vars
+
+webpack compiled with 1 warning
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/Row.js
+  Line 5:10:  'movies' is assigned a value but never used     no-unused-vars
+  Line 5:18:  'setMovies' is assigned a value but never used  no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/Row.js
+  Line 5:10:  'movies' is assigned a value but never used     no-unused-vars
+  Line 5:18:  'setMovies' is assigned a value but never used  no-unused-vars
+
+webpack compiled with 1 warning
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/Row.js
+  Line 5:10:  'movies' is assigned a value but never used     no-unused-vars
+  Line 5:18:  'setMovies' is assigned a value but never used  no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/Row.js
+  Line 5:10:  'movies' is assigned a value but never used     no-unused-vars
+  Line 5:18:  'setMovies' is assigned a value but never used  no-unused-vars
+
+webpack compiled with 1 warning
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/Row.js
+  Line 5:10:  'movies' is assigned a value but never used                                                                        no-unused-vars
+  Line 9:6:   React Hook useEffect has a missing dependency: 'fetchMovieData'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/Row.js
+  Line 5:10:  'movies' is assigned a value but never used                                                                        no-unused-vars
+  Line 9:6:   React Hook useEffect has a missing dependency: 'fetchMovieData'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+webpack compiled with 1 warning
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/Row.js
+  Line 5:10:  'movies' is assigned a value but never used                                                                        no-unused-vars
+  Line 9:6:   React Hook useEffect has a missing dependency: 'fetchMovieData'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/Row.js
+  Line 5:10:  'movies' is assigned a value but never used                                                                        no-unused-vars
+  Line 9:6:   React Hook useEffect has a missing dependency: 'fetchMovieData'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+webpack compiled with 1 warning
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/Row.js
+  Line 5:10:  'movies' is assigned a value but never used                                                                        no-unused-vars
+  Line 9:6:   React Hook useEffect has a missing dependency: 'fetchMovieData'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/Row.js
+  Line 5:10:  'movies' is assigned a value but never used                                                                        no-unused-vars
+  Line 9:6:   React Hook useEffect has a missing dependency: 'fetchMovieData'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+webpack compiled with 1 warning
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/Row.js
+  Line 5:10:  'movies' is assigned a value but never used                                                                        no-unused-vars
+  Line 9:6:   React Hook useEffect has a missing dependency: 'fetchMovieData'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/Row.js
+  Line 5:10:  'movies' is assigned a value but never used                                                                        no-unused-vars
+  Line 9:6:   React Hook useEffect has a missing dependency: 'fetchMovieData'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+webpack compiled with 1 warning
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/Row.js
+  Line 5:10:  'movies' is assigned a value but never used  no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/Row.js
+  Line 5:10:  'movies' is assigned a value but never used  no-unused-vars
+
+webpack compiled with 1 warning
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Failed to compile.
+
+Syntax error: /root/react/react-disneyplus/src/components/Row.css Missed semicolon (44:20)
+  42 |     transition: 400ms all ease-in-out;
+  43 |     font-weight: 700;
+> 44 |     font-size: 2rem
+     |                    ^
+  45 |     color: gold;
+  46 | }
+ERROR in ./src/components/Row.css (./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[2]!./node_modules/source-map-loader/dist/cjs.js!./src/components/Row.css)
+Module build failed (from ./node_modules/postcss-loader/dist/cjs.js):
+SyntaxError
+
+(44:20) /root/react/react-disneyplus/src/components/Row.css Missed semicolon
+
+  42 |     transition: 400ms all ease-in-out;
+  43 |     font-weight: 700;
+> 44 |     font-size: 2rem
+     |                    ^
+  45 |     color: gold;
+  46 | }
+
+webpack compiled with 1 error
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+
+> react-disneyplus@0.1.0 start
+> react-scripts start
+
+(node:419152) [DEP_WEBPACK_DEV_SERVER_ON_AFTER_SETUP_MIDDLEWARE] DeprecationWarning: 'onAfterSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+(node:419152) [DEP_WEBPACK_DEV_SERVER_ON_BEFORE_SETUP_MIDDLEWARE] DeprecationWarning: 'onBeforeSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+Starting the development server...
+
+Compiled successfully!
+
+You can now view react-disneyplus in the browser.
+
+  Local:            http://localhost:3000
+  On Your Network:  http://192.168.15.80:3000
+
+Note that the development build is not optimized.
+To create a production build, use npm run build.
+
+webpack compiled successfully
+Compiling...
+[0;33mOne of your dependencies, babel-preset-react-app, is importing the
+"@babel/plugin-proposal-private-property-in-object" package without
+declaring it in its dependencies. This is currently working because
+"@babel/plugin-proposal-private-property-in-object" is already in your
+node_modules folder for unrelated reasons, but it [1mmay break at any time[0;33m.
+
+babel-preset-react-app is part of the create-react-app project, [1mwhich
+is not maintianed anymore[0;33m. It is thus unlikely that this bug will
+ever be fixed. Add "@babel/plugin-proposal-private-property-in-object" to
+your devDependencies to work around this error. This will make this message
+go away.[0m
+  
+Compiled with warnings.
+
+[eslint] 
+src/components/Row.js
+  Line 10:10:  'modalOpen' is assigned a value but never used  no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/Row.js
+  Line 10:10:  'modalOpen' is assigned a value but never used  no-unused-vars
+
+webpack compiled with 1 warning
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/Row.js
+  Line 10:10:  'modalOpen' is assigned a value but never used         no-unused-vars
+  Line 12:25:  'setMovieSelected' is assigned a value but never used  no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/Row.js
+  Line 10:10:  'modalOpen' is assigned a value but never used         no-unused-vars
+  Line 12:25:  'setMovieSelected' is assigned a value but never used  no-unused-vars
+
+webpack compiled with 1 warning
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/Row.js
+  Line 10:10:  'modalOpen' is assigned a value but never used         no-unused-vars
+  Line 12:25:  'setMovieSelected' is assigned a value but never used  no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/Row.js
+  Line 10:10:  'modalOpen' is assigned a value but never used         no-unused-vars
+  Line 12:25:  'setMovieSelected' is assigned a value but never used  no-unused-vars
+
+webpack compiled with 1 warning
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/Row.js
+  Line 10:10:  'modalOpen' is assigned a value but never used         no-unused-vars
+  Line 12:25:  'setMovieSelected' is assigned a value but never used  no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/Row.js
+  Line 10:10:  'modalOpen' is assigned a value but never used         no-unused-vars
+  Line 12:25:  'setMovieSelected' is assigned a value but never used  no-unused-vars
+
+webpack compiled with 1 warning
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/Row.js
+  Line 10:10:  'modalOpen' is assigned a value but never used         no-unused-vars
+  Line 12:25:  'setMovieSelected' is assigned a value but never used  no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/Row.js
+  Line 10:10:  'modalOpen' is assigned a value but never used         no-unused-vars
+  Line 12:25:  'setMovieSelected' is assigned a value but never used  no-unused-vars
+
+webpack compiled with 1 warning
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/Row.js
+  Line 10:10:  'modalOpen' is assigned a value but never used         no-unused-vars
+  Line 12:25:  'setMovieSelected' is assigned a value but never used  no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/Row.js
+  Line 10:10:  'modalOpen' is assigned a value but never used         no-unused-vars
+  Line 12:25:  'setMovieSelected' is assigned a value but never used  no-unused-vars
+
+webpack compiled with 1 warning
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/Row.js
+  Line 10:10:  'modalOpen' is assigned a value but never used         no-unused-vars
+  Line 12:25:  'setMovieSelected' is assigned a value but never used  no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/Row.js
+  Line 10:10:  'modalOpen' is assigned a value but never used         no-unused-vars
+  Line 12:25:  'setMovieSelected' is assigned a value but never used  no-unused-vars
+
+webpack compiled with 1 warning
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/Row.js
+  Line 10:10:  'modalOpen' is assigned a value but never used         no-unused-vars
+  Line 12:25:  'setMovieSelected' is assigned a value but never used  no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/Row.js
+  Line 10:10:  'modalOpen' is assigned a value but never used         no-unused-vars
+  Line 12:25:  'setMovieSelected' is assigned a value but never used  no-unused-vars
+
+webpack compiled with 1 warning
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/Row.js
+  Line 10:10:  'modalOpen' is assigned a value but never used         no-unused-vars
+  Line 12:25:  'setMovieSelected' is assigned a value but never used  no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/Row.js
+  Line 10:10:  'modalOpen' is assigned a value but never used         no-unused-vars
+  Line 12:25:  'setMovieSelected' is assigned a value but never used  no-unused-vars
+
+webpack compiled with 1 warning
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/Row.js
+  Line 10:10:  'modalOpen' is assigned a value but never used         no-unused-vars
+  Line 12:25:  'setMovieSelected' is assigned a value but never used  no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/Row.js
+  Line 10:10:  'modalOpen' is assigned a value but never used         no-unused-vars
+  Line 12:25:  'setMovieSelected' is assigned a value but never used  no-unused-vars
+
+webpack compiled with 1 warning
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/Row.js
+  Line 10:10:  'modalOpen' is assigned a value but never used         no-unused-vars
+  Line 12:25:  'setMovieSelected' is assigned a value but never used  no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/Row.js
+  Line 10:10:  'modalOpen' is assigned a value but never used         no-unused-vars
+  Line 12:25:  'setMovieSelected' is assigned a value but never used  no-unused-vars
+
+webpack compiled with 1 warning
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/Row.js
+  Line 10:10:  'modalOpen' is assigned a value but never used         no-unused-vars
+  Line 12:25:  'setMovieSelected' is assigned a value but never used  no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/Row.js
+  Line 10:10:  'modalOpen' is assigned a value but never used         no-unused-vars
+  Line 12:25:  'setMovieSelected' is assigned a value but never used  no-unused-vars
+
+webpack compiled with 1 warning
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/Row.js
+  Line 12:25:  'setMovieSelected' is assigned a value but never used  no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/Row.js
+  Line 12:25:  'setMovieSelected' is assigned a value but never used  no-unused-vars
+
+webpack compiled with 1 warning
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/Row.js
+  Line 12:25:  'setMovieSelected' is assigned a value but never used  no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/Row.js
+  Line 12:25:  'setMovieSelected' is assigned a value but never used  no-unused-vars
+
+webpack compiled with 1 warning
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/Row.js
+  Line 12:25:  'setMovieSelected' is assigned a value but never used  no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/Row.js
+  Line 12:25:  'setMovieSelected' is assigned a value but never used  no-unused-vars
+
+webpack compiled with 1 warning
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/Row.js
+  Line 12:25:  'setMovieSelected' is assigned a value but never used  no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/Row.js
+  Line 12:25:  'setMovieSelected' is assigned a value but never used  no-unused-vars
+
+webpack compiled with 1 warning
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/Row.js
+  Line 12:25:  'setMovieSelected' is assigned a value but never used  no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/Row.js
+  Line 12:25:  'setMovieSelected' is assigned a value but never used  no-unused-vars
+
+webpack compiled with 1 warning
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/Row.js
+  Line 12:25:  'setMovieSelected' is assigned a value but never used  no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/Row.js
+  Line 12:25:  'setMovieSelected' is assigned a value but never used  no-unused-vars
+
+webpack compiled with 1 warning
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/Row.js
+  Line 12:25:  'setMovieSelected' is assigned a value but never used  no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/Row.js
+  Line 12:25:  'setMovieSelected' is assigned a value but never used  no-unused-vars
+
+webpack compiled with 1 warning
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/Row.js
+  Line 12:25:  'setMovieSelected' is assigned a value but never used  no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/Row.js
+  Line 12:25:  'setMovieSelected' is assigned a value but never used  no-unused-vars
+
+webpack compiled with 1 warning
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/Row.js
+  Line 63:7:  'base_url' is assigned a value but never used  no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/Row.js
+  Line 63:7:  'base_url' is assigned a value but never used  no-unused-vars
+
+webpack compiled with 1 warning
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/Row.js
+  Line 63:7:  'base_url' is assigned a value but never used  no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/Row.js
+  Line 63:7:  'base_url' is assigned a value but never used  no-unused-vars
+
+webpack compiled with 1 warning
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
