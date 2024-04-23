@@ -1,8 +1,9 @@
 import React, { useRef } from 'react';
 import styled from 'styled-components';
+import { useNavigate } from 'react-router-dom';
 
 const Category = () => {
-
+  const navigate = useNavigate();
   // Create a ref for each video
   const disneyRef = useRef(null);
   const marvelRef = useRef(null);
@@ -33,33 +34,37 @@ const Category = () => {
     }
   };
 
+  const handleCategoryclick = (category) => {
+    navigate(`/category/${category}`);
+  };
+
   return (
     <Container>
-      <Wrap onMouseEnter={() => playVideo(disneyRef)} onMouseLeave={() => rewindVideo(disneyRef)}>
+      <Wrap onMouseEnter={() => playVideo(disneyRef)} onMouseLeave={() => rewindVideo(disneyRef)} onClick={() => handleCategoryclick('disney')}>
         <img src="/images/viewers-disney.png" alt="disney"/>
         <video ref={disneyRef} loop muted>
           <source src="/videos/disney.mp4" type="video/mp4"/>
         </video>
       </Wrap>
-      <Wrap onMouseEnter={() => playVideo(marvelRef)} onMouseLeave={() => rewindVideo(marvelRef)}>
+      <Wrap onMouseEnter={() => playVideo(marvelRef)} onMouseLeave={() => rewindVideo(marvelRef)} onClick={() => handleCategoryclick('marvel')}>
         <img src="/images/viewers-marvel.png" alt="marvel"/>
         <video ref={marvelRef} loop muted>
           <source src="/videos/marvel.mp4" type="video/mp4"/>
         </video>
       </Wrap>
-      <Wrap onMouseEnter={() => playVideo(pixarRef)} onMouseLeave={() => rewindVideo(pixarRef)}>
+      <Wrap onMouseEnter={() => playVideo(pixarRef)} onMouseLeave={() => rewindVideo(pixarRef)} onClick={() => handleCategoryclick('pixar')}>
         <img src="/images/viewers-pixar.png" alt="pixar"/>
         <video ref={pixarRef} loop muted>
           <source src="/videos/pixar.mp4" type="video/mp4"/>
         </video>
       </Wrap>
-      <Wrap onMouseEnter={() => playVideo(starwarsRef)} onMouseLeave={() => rewindVideo(starwarsRef)}>
+      <Wrap onMouseEnter={() => playVideo(starwarsRef)} onMouseLeave={() => rewindVideo(starwarsRef)} onClick={() => handleCategoryclick('starwars')}>
         <img src="/images/viewers-starwars.png" alt="starwars"/>
         <video ref={starwarsRef} loop muted>
           <source src="/videos/star-wars.mp4" type="video/mp4"/>
         </video>
       </Wrap>
-      <Wrap onMouseEnter={() => playVideo(nationalRef)} onMouseLeave={() => rewindVideo(nationalRef)}>
+      <Wrap onMouseEnter={() => playVideo(nationalRef)} onMouseLeave={() => rewindVideo(nationalRef)} onClick={() => handleCategoryclick('nationalgeographic')}>
         <img src="/images/viewers-national.png" alt="national-geographic"/>
         <video ref={nationalRef} loop muted>
           <source src="/videos/national-geographic.mp4" type="video/mp4"/>

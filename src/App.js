@@ -1,48 +1,37 @@
-import Nav from './components/Nav'
-import Banner from './components/Banner';
-import styled from 'styled-components';
 import './App.css';
-import Category from './components/Category';
-import Row from './components/Row';
-import requests from './api/request';
+import { Route, Routes, Outlet } from 'react-router-dom';
+import Nav from './components/Nav';
+import LoginPage from './pages/LoginPage';
+import MainPage from './pages/MainPage';
+import DetailPage from './pages/DetailPage';
+import SearchPage from './pages/SearchPage';
+import CategoryDetail from './components/CategoryDetail';
+
+const Layout = () => {
+  return (
+    <div>
+      <Nav/>
+
+      <Outlet/>
+    </div>
+  )
+}
 
 function App() {
   return (
     <div className="App">
-      <MainContainer>
-        <Nav/>
-        <Banner/>
-        <Category/>
-        <Row title="Trending Now" id="TN" fetchURL={requests.fetchTrending}/>
-        <Row title="Top Rated" id="TR" fetchURL={requests.fetchTopRated}/>
-        <Row title="Action" id="AC" fetchURL={requests.fetchActionMovies}/>
-        <Row title="Comedy" id="CM" fetchURL={requests.fetchComedyMovies}/>
-        <Row title="Horror" id="HR" fetchURL={requests.fetchHorrorMovies}/>
-        <Row title="Romance" id="RM" fetchURL={requests.fetchRomanceMovies}/>
-        <Row title="Documentary" id="DM" fetchURL={requests.fetchDocumentaries}/>
-      </MainContainer>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<LoginPage />} />
+          <Route path="main" element={<MainPage />} />
+          <Route path=":movieId" element={<DetailPage />} />
+          <Route path="search" element={<SearchPage />} />
+          <Route path="category/:categoryName" element={<CategoryDetail />} />
+        </Route>
+      </Routes>
     </div>
   );
 }
 
 export default App;
 
-
-const MainContainer = styled.main`
-  position: relative;
-  min-height: calc(100vh - 250px);
-  overflow-x: hidden;
-  display: block;
-  top: 72px;  
-  // Nav의 높이가 70이므로
-  padding: 0 calc( 3.5vw + 5px );
-
-  &:after {
-    background: url("/images/home-background.png") center center / cover no-repeat fixed;
-    content: "";
-    position: absolute;
-    inset: 0px;
-    opacity: 1;
-    z-index: -1;
-  }
-`;

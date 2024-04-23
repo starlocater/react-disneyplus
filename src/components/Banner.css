@@ -2,6 +2,7 @@
     color: white;
     object-fit: contain;
     height: 448px;
+    cursor: pointer;
 }
 
 @media (min-width: 1500px) {
@@ -89,6 +90,7 @@
     font-weight: 700;
     padding: 0.4rem;
     margin-right: 1rem;
+    border-radius: 5px;
 }
 
 .banner_button:hover {
