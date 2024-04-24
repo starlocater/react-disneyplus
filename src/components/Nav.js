@@ -1,6 +1,7 @@
 import React, { useEffect,useState, useRef } from 'react'
 import styled, {StyleSheetManager} from 'styled-components'
 import { useLocation, useNavigate } from 'react-router-dom';
+import { getAuth, signInWithPopup, GoogleAuthProvider, onAuthStateChanged, signOut } from 'firebase/auth';
 
 
 const Nav = () => {
@@ -15,13 +16,22 @@ const Nav = () => {
     // 검색한 값을 바탕으로 페이지를 이동시키는 상수
     const navigate = useNavigate();
     const inputRef = useRef(null);
+    // Firebase 구글 로그인 인스턴스
+    const auth = getAuth();
+    const provider = new GoogleAuthProvider();
+    // localStorage에 userDat가 있으면 저장하는 상수
+    const initialUserData = localStorage.getItem("userData") ? JSON.parse(localStorage.getItem("userData")) : {};
+    // Firebase 로그인 시 로그인한 유저의 정보를 저장하는 State
+    const [userData, setUserData] = useState(initialUserData);
+
+    
 
     const handleLogoClick = () => {
       if (inputRef.current) {
         inputRef.current.blur();
       }
       window.location.href = "/main";
-    }
+    };
 
     // Scroll 시 Nav창을 표시하게 만드는 함수
     const handleScroll = () => {
@@ -30,17 +40,31 @@ const Nav = () => {
       } else {
         setShow(false);
       }
-    }
+    };
 
     // 검색창 입력값에 따라 url 경로를 자동으로 바꿔주는 함수
     const handleChange = (e) => {
       setSearchValue(e.target.value);
       navigate(`/search?q=${e.target.value}`);
-    }
+    };
 
     const handleClick = () => {
       navigate('/search')
-    }
+    };
+
+
+    // Login redirection
+    useEffect(() => {
+      onAuthStateChanged(auth, (currentUser) => {
+        if(currentUser) {
+          if(location.pathname === '/') {
+            navigate('/main');
+          }
+        } else {
+          navigate('/');
+        }
+      })
+    }, [auth, navigate, location.pathname]);
 
     useEffect(() => { // Step 3: Use useEffect to set focus when pathname changes
       if (inputRef.current) {
@@ -55,7 +79,27 @@ const Nav = () => {
       return () => {
         window.removeEventListener('scroll', handleScroll);
       }
-    }, [show])
+    }, [show]);
+
+    const handleAuth = () => {
+      signInWithPopup(auth, provider)
+      .then((result) => {
+        setUserData(result.user);
+        localStorage.setItem('userData', JSON.stringify(result.user));
+      })
+      .catch((error) => {
+        alert(error.message);
+      })
+    };
+
+    const handleLogOut = () => {
+      signOut(auth).then(() => {
+        setUserData({});
+        navigate('/');
+      }).catch((error) => {
+        alert(error.message);
+      });
+    };
     
 
   return (
@@ -65,9 +109,17 @@ const Nav = () => {
               <img alt="Disney plus Logo" src="/images/logo.svg" onClick={handleLogoClick}/>
           </Logo>
 
-          {location.pathname === "/" ? (<Login>Login</Login>) : 
+          {location.pathname === "/" ? (<Login onClick={handleAuth}>Login</Login>) : 
           <Input ref={inputRef} value={searchValue} onChange={handleChange} onClick={handleClick} className='nav__input' type='text' placeholder='Search'/>}
 
+          {location.pathname !== "/" && userData ? (
+          <SignOut>
+            <UserImg src={userData.photoURL} alt={userData.displayName} />
+            <Dropdown>
+              <span onClick={handleLogOut}>Sign Out</span>
+            </Dropdown>
+          </SignOut>
+          ) : null}
       </NavWrapper>
     </StyleSheetManager>
   )
@@ -111,6 +163,7 @@ const Login = styled.a`
     letter-spacing: 1.5px;
     border: 1px solid #f9f9f9;
     transition: all 0.2s ease 0s;
+    cursor: pointer;
 
     &:hover {
       background-color: #f9f9f9;
@@ -134,3 +187,48 @@ const Input = styled.input`
                 0 0 40px rgba(0, 0, 255, 0.6), /* Deep blue outer glow */
                 0 0 70px rgba(0, 0, 255, 0.6); /* Wider deep blue glow */
 `;
+
+const Dropdown = styled.div`
+    position: absolute;
+    top: 48px;
+    right: 0px;
+    background: rgb(19, 19, 19);
+    border: 1px solid rgba(151, 151, 151, 0.34);
+    border-radius: 4px;
+    box-shadow: rgb(0 0 0 / 50%) 0px 0px 18px 0px;
+    padding: 10px;
+    font-size: 14px;
+    letter-spacing: 3px;
+    width: 100%;
+    opacity: 0;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+`;
+
+const SignOut = styled.div`
+  position: relative;
+  height: 48px;
+  width: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    ${Dropdown} {
+      opacity: 1;
+      transition-duration: 1s;
+    }
+  }
+`;
+
+const UserImg = styled.img`
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+`;
+
+
+
